@@ -64,6 +64,7 @@ export default class OpenAITranslate extends TranslateEngine {
   generateUserPrompts(options: TranslateOptions): string {
     const sourceLang = options.from;
     const targetLang = options.to;
+    const existingTranslations = options.existingTranslations;
 
     let generatedUserPrompt = `translate from ${sourceLang} to ${targetLang}:\n\n${options.text}`;
 
