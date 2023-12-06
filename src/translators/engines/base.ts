@@ -7,11 +7,13 @@ export interface TranslateOptions {
   text: string
   from?: string
   to?: string
+  existingTranslations?: object
 }
 
 export interface TranslateResult {
   text: string
   from: string
+  existingTranslations?: object
   to: string
   response: any
   linkToResult: string
